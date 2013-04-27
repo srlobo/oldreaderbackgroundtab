@@ -1,0 +1,22 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "background.js" ]
+   },
+   "content_scripts": [ {
+      "js": [ "contents.js" ],
+      "matches": [ "http://*/reader/view/*", "https://*/reader/view/*", "http://*/reader/play/*", "https://*/reader/play/*" ]
+   } ],
+   "description": "Open current item in a new back ground tab with the key 'v' for Gooogle Reader.",
+   "icons": {
+      "128": "icons/icon128.png",
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDk5HL2pVHy/SyJ+iA+yuIAwVDquaY9qnoZr1u/R6Huo1XDLKj+q2zd/v4p3g8sl3nsnRBEPyTNKKds66N3BwJoGFeBkHKceZ+TUubVaGACkTJwBFG2m0l9P3nFc3zoVYLE3NBOdyQUfUNvhywikoTbZOKndZjcLXy1CLRkhwfmmQIDAQAB",
+   "manifest_version": 2,
+   "name": "Google Reader Open entry in background tab",
+   "permissions": [ "tabs" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "0.0.10"
+}
