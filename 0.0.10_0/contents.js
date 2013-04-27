@@ -1,5 +1,5 @@
 var is_google = function (host) {
-  return host.match('.*\.google\..*');
+  return host.match('.*\.theoldreader\..*');
 }
 
 if (! is_google(document.location.host)) { return; }
